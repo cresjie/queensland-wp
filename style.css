@@ -5,7 +5,9 @@ Author: Cres Jie Labasano
 Description: Queensland hotel template
 Version: 1.0.0
 */
-
+body{
+	color: #fff;
+}
 .main-navbar{
 	min-height: auto;
 	margin-top: 50px;
@@ -37,7 +39,16 @@ Version: 1.0.0
 .transparent-black .transparent-black{
 	background: rgba(0,0,0,0);
 }
-.transparent-black a{
+.transparent-black a,
+.transparent-black p,
+.transparent-black span,
+.transparent-black th,
+.transparent-black td,
+.transparent-black h1,
+.transparent-black h2,
+.transparent-black h3,
+.transparent-black h4,
+.transparent-black h5{
 	color: #fff;
 }
 
@@ -148,6 +159,13 @@ textarea{
 }
 .scroll-wrapper .inner{
 	padding: 10px;
+}
+
+.hb-search-form .hb-form-table li{
+	display: inline-block;
+}
+.hb-search-form .hb-form-table .hb-form-field label{
+	display: block;
 }
 /*
 * Responsive
