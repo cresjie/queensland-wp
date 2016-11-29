@@ -89,6 +89,12 @@ Version: 1.0.0
 	margin: 5px;
 }
 
+.color-fff{
+	color: #fff;
+}
+textarea{
+	max-width: 100%;
+}
 
 /**
 * Error Page
@@ -99,6 +105,49 @@ Version: 1.0.0
 }
 .page-error .title{
 	font-size: 100px;
+}
+/*
+ WP Hotel booking
+*/
+.hb_single_room_details .hb_single_room_tabs{
+	padding: 0;
+	background-color: rgba(0,0,0,.5);
+	overflow: hidden;
+}
+.hb_single_room_details .hb_single_room_tabs li{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: -5px;
+}
+
+.hb_single_room_details .hb_single_room_tabs li a{
+	display: block;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #4aa9fd;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+.hb_single_room_details .hb_single_room_tabs li a:hover,
+.hb_single_room_details .hb_single_room_tabs li a.active{
+	border-bottom-color: #f00;
+}
+.room-head .title h4{
+	margin: 0;
+	font-size: 30px;
+}
+.room-head .price .price_value{
+	font-size: 30px;
+	color: #f5c045;
+}
+.room-head .price .unit:before{
+	content: '/';
+}
+.comment-form-comment label{
+	display: block;
+}
+.scroll-wrapper .inner{
+	padding: 10px;
 }
 /*
 * Responsive
@@ -112,5 +161,12 @@ Version: 1.0.0
 	.room-description-wrapper{
 		height: 376px;
     	overflow: hidden;
+	}
+
+	.room-information{
+		height: 370px;
+	}
+	.hb_single_room_tab_details .scrollbar-rail{
+		height: 330px;
 	}
 }

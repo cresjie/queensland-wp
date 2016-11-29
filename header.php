@@ -4,6 +4,8 @@
        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
        <title>VICTORIA COURT Official Site – Feel the Distinction : Home</title>
 
+       
+
        <link rel="stylesheet" href="<?=get_template_directory_uri()?>/css/bootstrap.min.css"/>
 
        <!-- Additional stylesheets-->
@@ -27,9 +29,10 @@
        <script src="<?=get_template_directory_uri()?>/js/featherlight/featherlight.min.js"></script>
        <script src="<?=get_template_directory_uri()?>/js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 
+       <?php wp_head(); ?>
 
 	</head>
-	<body>
+	<body <?php body_class(); ?>>
 		<style>
 			body{
 				background-image: url(<?=get_template_directory_uri()?>/images/temp/bg.jpg);
@@ -53,7 +56,7 @@
 					<ul class="nav navbar-nav navbar-right">
 		              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
 		              <li><a href="../navbar-static-top/">Static top</a></li>
-		              <li><a href="../navbar-fixed-top/">Fixed top122</a></li>
+		              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
 		            </ul>
 				</div>
 					
