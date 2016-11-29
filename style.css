@@ -1,0 +1,116 @@
+/*
+Theme Name: Queensland
+Theme URI: https://github.com/cresjie
+Author: Cres Jie Labasano
+Description: Queensland hotel template
+Version: 1.0.0
+*/
+
+.main-navbar{
+	min-height: auto;
+	margin-top: 50px;
+	border: 0;
+	border-radius: 0;
+}
+.main-navbar .navbar-toggle .icon-bar{
+	background: #fff;
+}
+.main-navbar .navbar-brand{
+	height: auto;
+}
+.main-navbar .navbar-brand img{
+	position: absolute;
+	top: -38px;
+}
+.main-navbar .navbar-nav li a{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.main-navbar .navbar-nav>li>a:hover{
+	background: rgba(0,0,0,.5);
+	color: #fd2323;
+}
+.transparent-black{
+	background: rgba(0,0,0,.7);
+	color: #fff;
+}
+.transparent-black .transparent-black{
+	background: rgba(0,0,0,0);
+}
+.transparent-black a{
+	color: #fff;
+}
+
+#main-content{
+	margin: 45px 0;
+	overflow: hidden;
+}
+#footer{
+	padding: 5px 0;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer-links{
+	margin-bottom: 0;
+}
+.room-description{
+	padding: 10px;
+}
+/**
+* Global classes
+*/
+.margin-none{
+	margin: 0;
+}
+
+
+.spacer-bottom{
+	margin-bottom: 1px;
+}
+.spacer-top{
+	margin-top: 1px;
+}
+.full-width{
+	width: 100%;
+}
+.pad-5-10{
+	padding: 5px 10px;
+}
+.sm-row{
+	margin-right: -1px;
+	margin-left: -1px;
+}
+.sm-row .column{
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.lSSlideOuter .lSPager.lSGallery{
+	margin: 5px;
+}
+
+
+/**
+* Error Page
+*/
+
+.page-error .message{
+	padding: 10% 0;
+}
+.page-error .title{
+	font-size: 100px;
+}
+/*
+* Responsive
+*/
+
+@media (min-width: 992px){
+	.height-md-420{
+		height: 420px;
+		overflow: hidden;
+	}
+	.room-description-wrapper{
+		height: 376px;
+    	overflow: hidden;
+	}
+}
