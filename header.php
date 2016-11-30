@@ -15,7 +15,7 @@
 
 
 
-       <link rel="stylesheet" href="<?=get_template_directory_uri()?>/style.css">
+       
 
        <script src="<?=get_template_directory_uri()?>/js/jquery/jquery-3.1.1.min.js"></script>
        <script src="<?=get_template_directory_uri()?>/js/bootstrap.min.js"></script>
@@ -23,13 +23,19 @@
        <script src="<?=get_template_directory_uri()?>/js/contentjs/room-view.js"></script>
 
        <!-- Addition scripts-->
-       
+       <script>
+       		var url = {
+       			home: '<?=get_site_url()?>'
+       		}
+       </script>
 
        <script src="<?=get_template_directory_uri()?>/js/lightslider/js/lightslider.min.js"></script>
        <script src="<?=get_template_directory_uri()?>/js/featherlight/featherlight.min.js"></script>
        <script src="<?=get_template_directory_uri()?>/js/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 
        <?php wp_head(); ?>
+
+       <link rel="stylesheet" href="<?=get_template_directory_uri()?>/style.css">
 
 	</head>
 	<body <?php body_class(); ?>>

@@ -7,6 +7,9 @@ Version: 1.0.0
 */
 body{
 	color: #fff;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .main-navbar{
 	min-height: auto;
@@ -48,7 +51,8 @@ body{
 .transparent-black h2,
 .transparent-black h3,
 .transparent-black h4,
-.transparent-black h5{
+.transparent-black h5,
+.transparent-black label{
 	color: #fff;
 }
 
@@ -106,7 +110,9 @@ body{
 textarea{
 	max-width: 100%;
 }
-
+.border-right-1{
+	border-right: 1px solid #fff;
+}
 /**
 * Error Page
 */
@@ -161,11 +167,72 @@ textarea{
 	padding: 10px;
 }
 
-.hb-search-form .hb-form-table li{
+.hotel-booking-search .hb-form-table li{
 	display: inline-block;
 }
-.hb-search-form .hb-form-table .hb-form-field label{
+.hotel-booking-search .hb-form-table .hb-form-field label{
 	display: block;
+}
+.hotel-booking-search input.error{
+	border: 3px solid red !important;
+}
+#hotel-booking-results .hb-search-results>.hb-room .hb-room-meta li>label{
+	color: #fff;
+}
+#hotel-booking-results .hb-search-results>.hb-room .hb-room-name a{
+	color: #ffb606;
+}
+.hb_search_quantity select,
+.hb_quantity input{
+	color: #000;
+}
+#hotel-booking-results h3{
+	color: #fff;
+    font-size: 22px;
+}
+.hb-booking-room-details{
+	min-width: auto;
+	padding: 10px;
+}
+#hotel-booking-results .hb-search-results>.hb-room{
+	border: none;
+}
+.hotel_booking_invalid_quantity {
+    border: 2px solid #f00;
+}
+#hotel-booking-cart .hb_sub_total .hb-align-right,
+#hotel-booking-cart .hb_advance_grand_total .hb-align-right{
+	color: #fff;
+}
+#hotel-booking-cart td.hb_gross_total,
+#hotel-booking-payment td.hb_gross_total{
+	text-align: right !important;
+}
+.hb_remove_cart_item {
+    color: #f00 !important;
+}
+#hotel-booking-cart .table input[type=number] {
+	padding: 5px;
+}
+#hotel-booking-cart table td{
+	vertical-align: middle;
+}
+#hotel-booking-cart table th,
+#hotel-booking-payment table th{
+	color: #cec947;
+	font-weight: bold;
+}
+#hb-payment-form h3{
+	color: #4789ce;
+	font-size: 24px;
+    font-weight: bold;
+}
+#hotel-booking-payment .table,
+#hotel-booking-cart .table{
+	border-bottom: 1px solid #fff;
+}
+.hb-required{
+	color: #f00 !important;
 }
 /*
 * Responsive
@@ -186,5 +253,17 @@ textarea{
 	}
 	.hb_single_room_tab_details .scrollbar-rail{
 		height: 330px;
+	}
+	/*
+	.hb-search-results li.hb-room{
+		display: inline-block;
+		width: 50%;
+	}
+	*/
+	
+}
+@media (max-width: 990px) {
+	#hotel-booking-results .hb-search-results>.hb-room{
+		border-bottom: 1px solid #eee;
 	}
 }
