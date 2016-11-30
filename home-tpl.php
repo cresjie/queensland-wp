@@ -72,12 +72,14 @@
                   </div>
                   -->
                   <div id="layer_location">
+                  		<!--
                      <ul>
                         <li><a href="#">asdf</a></li>
                         <li><a href="#">asdf</a></li>
                         <li><a href="#">asdf</a></li>
                         <li><a href="#">asdf</a></li>
                      </ul>
+                 -->
                   </div>
                   <div id="layer_a" class="bg">
                      <img src="<?=get_template_directory_uri()?>/images/splash/layer-1.png" alt="" class="bg_image_on" />
