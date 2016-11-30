@@ -182,6 +182,8 @@ textarea{
 #hotel-booking-results .hb-search-results>.hb-room .hb-room-name a{
 	color: #ffb606;
 }
+.transparent-black select,
+.transparent-black input,
 .hb_search_quantity select,
 .hb_quantity input{
 	color: #000;
@@ -234,6 +236,16 @@ textarea{
 .hb-required{
 	color: #f00 !important;
 }
+#hotel-booking-payment  th,
+#hotel-booking-cart  th{
+	display: table-cell !important;
+}
+#hotel-booking-payment .hb-order-new-customer input,
+#hotel-booking-payment .hb-order-new-customer select{
+	max-width: 100%;
+	width: 100%;
+}
+
 /*
 * Responsive
 */
@@ -254,13 +266,18 @@ textarea{
 	.hb_single_room_tab_details .scrollbar-rail{
 		height: 330px;
 	}
-	/*
-	.hb-search-results li.hb-room{
-		display: inline-block;
-		width: 50%;
-	}
-	*/
 	
+	
+}
+@media (min-width: 768px){
+	#hotel-booking-payment .hb-order-new-customer .col-2{
+		padding-right: 50px;
+	}
+}
+@media (max-width: 768px){
+	#hotel-booking-payment .hb-order-new-customer .col-2{
+		width: 100%;
+	}
 }
 @media (max-width: 990px) {
 	#hotel-booking-results .hb-search-results>.hb-room{
