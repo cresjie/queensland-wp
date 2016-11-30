@@ -31,7 +31,8 @@ body{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-.main-navbar .navbar-nav>li>a:hover{
+.main-navbar .navbar-nav>li>a:hover,
+.main-navbar .navbar-nav>li.current-menu-item>a{
 	background: rgba(0,0,0,.5);
 	color: #fd2323;
 }
@@ -245,7 +246,12 @@ textarea{
 	max-width: 100%;
 	width: 100%;
 }
-
+.hb-order-new-customer input[name=first_name]{
+	margin-bottom: 0;
+}
+input[type=checkbox].error{
+	outline: 1px solid #f00;
+}
 /*
 * Responsive
 */

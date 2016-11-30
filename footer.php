@@ -1,12 +1,13 @@
 	<footer id="footer" class="transparent-black">
 			<div class="container">
-				<ul class="footer-links list-inline text-right">
-					<li><a href="">Lorem</a></li>
-					<li><a href="">Lorem</a></li>
-					<li><a href="">Lorem</a></li>
-					<li><a href="">Lorem</a></li>
-					<li><a href="">Lorem</a></li>
-				</ul>
+				
+				<?php 
+	            	wp_nav_menu( array(
+						'theme_location' => 'secondary',
+						'menu_class' => 'footer-links list-inline text-right',
+						'container' => 'ul'
+					) );
+	            ?>
 			</div>
 				
 		</footer>

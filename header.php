@@ -60,11 +60,13 @@
 		            </a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-		              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-		              <li><a href="../navbar-static-top/">Static top</a></li>
-		              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-		            </ul>
+		            <?php 
+		            	wp_nav_menu( array(
+							'theme_location' => 'primary',
+							'menu_class' => 'nav navbar-nav navbar-right',
+							'container' => 'ul'
+						) );
+		            ?>
 				</div>
 					
 			</div>

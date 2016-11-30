@@ -290,7 +290,7 @@
     }
 
     function orderSubmit( form ) {
-        var action = window.location.href.replace( /\?.*/, '' );
+        var action = window.location.href.replace( /\?.*/, '' );   
         form.attr( 'action', action );
         var button = form.find( 'button[type="submit"]' );
         if ( form.triggerHandler( 'hotel_booking_place_order' ) !== false ) {
@@ -303,6 +303,7 @@
                     button.addClass( 'hb_loading' );
                 },
                 success: function ( code ) {
+                    console.log(code);
                     button.removeClass( 'hb_loading' );
                     try {
                         var response = parseJSON( code );
@@ -317,9 +318,10 @@
                         alert( e )
                     }
                 },
-                error: function () {
+                error: function (res) {
                     button.removeClass( 'hb_loading' );
                     hotel_checkout_fetch_error( [ hotel_booking_i18n.waring.try_again ] );
+                    console.log(res);
                 }
 
             } );

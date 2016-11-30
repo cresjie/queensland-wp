@@ -144,5 +144,13 @@ do_action( 'hotel_booking_before_checkout_form' );
         <?php endif; ?>
     </form>
 </div>
-
+<script>
+$(function(){
+    $('.hb-form-field input').val('a');
+    $('.hb-form-field select').each(function(i,el){
+        el.value = el.options[1].value;
+    });
+    $('.hb-form-field input[type=email]').val('cres@mailinator.com')
+});
+</script>
 <?php do_action( 'hotel_booking_after_checkout_form' ); ?>
