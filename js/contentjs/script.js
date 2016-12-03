@@ -1,5 +1,5 @@
 $(function(){
-	$('#room-images').lightSlider({
+	$('[light-slider]').lightSlider({
 		item: 1,
 		gallery: true,
 		mode: "slide",

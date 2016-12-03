@@ -8,7 +8,7 @@
 				<h1 class="margin-none post-title"><?php the_title(); ?></h1>
 			</div>
 
-			<div class="transparent-black pad-5-10 post-content">
+			<div class="transparent-black  page-content">
 				<?php the_content(); ?>
 			</div>
 			

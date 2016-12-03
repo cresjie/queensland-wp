@@ -29,10 +29,14 @@
                   //modal
                </script>
                <link rel="shortcut icon" href="/VC_FAVICON.ico">
-               <link rel="stylesheet" href="http://victoriacourt.biz/css/normalize.css">
-               <link rel="stylesheet" href="<?=get_template_directory_uri()?>/css/home/home.css">
+               <link rel="stylesheet" href="<?=get_template_directory_uri()?>/css/bootstrap.min.css">
+               <link rel="stylesheet" href="<?=get_template_directory_uri()?>/css/home.css">
                <script src="http://victoriacourt.biz/js/vendor/modernizr-2.6.2.min.js"></script>
-               
+               <style>
+               .home-menu a{
+                  color: #fff;
+               }
+               </style>
             </head>
             <body id="splash2">
                <div id="loader">
@@ -72,14 +76,14 @@
                   </div>
                   -->
                   <div id="layer_location">
-                  		<!--
-                     <ul>
-                        <li><a href="#">asdf</a></li>
-                        <li><a href="#">asdf</a></li>
-                        <li><a href="#">asdf</a></li>
-                        <li><a href="#">asdf</a></li>
-                     </ul>
-                 -->
+                  		
+                     <?php 
+                        wp_nav_menu( array(
+                        'theme_location' => 'primary',
+                        'menu_class' => 'list-inline text-center home-menu',
+                        'container' => 'ul'
+                     ) );
+                     ?>
                   </div>
                   <div id="layer_a" class="bg">
                      <img src="<?=get_template_directory_uri()?>/images/splash/layer-1.png" alt="" class="bg_image_on" />

@@ -7,18 +7,25 @@ register_nav_menus( array(
 ) );
 
 
-function queensland_assets()
+function queensland_scripts()
 {
-	$dependencies = array(
-			'jquery',
-			'jquery-ui-sortable',
-			'jquery-ui-datepicker',
-			'wp-util'
-		);
-	wp_deregister_script('tp-hotel-booking');
-	wp_register_script( 'tp-hotel-booking', get_template_directory_uri() . '/hotel-booking-asset/js/hotel-booking.js', $dependencies );
-	wp_localize_script( 'tp-hotel-booking', 'hotel_booking_i18n', hb_i18n() );
 	
-}
-add_action( 'wp_enqueue_scripts', 'queensland_assets' );
+	//wp_register_script('jquery', get_template_directory_uri() .'/js/jquery/jquery-3.1.1.min.js', []);
+	wp_register_script('bootstrap', get_template_directory_uri(). '/js/bootstrap.min.js', ['jquery']);
 
+	wp_register_script('lightslider', get_template_directory_uri()  . '/js/lightslider/js/lightslider.min.js', ['jquery'], true);
+	wp_register_script('featherlight', get_template_directory_uri()  . '/js/featherlight/featherlight.min.js', ['jquery'], true);
+	wp_register_script('scrollbar', get_template_directory_uri() . '/js/jquery.scrollbar/jquery.scrollbar.min.js', ['jquery'], true);
+	
+	wp_register_script('script', get_template_directory_uri() . '/js/contentjs/script.js', ['jquery'], true);
+
+	wp_enqueue_script(['jquery', 'bootstrap', 'lightslider', 'featherlight', 'scrollbar']);
+}
+
+
+
+
+add_action( 'wp_enqueue_scripts', 'queensland_scripts' );
+
+
+add_theme_support( 'post-thumbnails' );
