@@ -56,7 +56,7 @@ global $hb_settings;
 
                         <tr class="hb_sub_total">
                             <td colspan="7" class="text-right border-right-1">
-                                <?php _e( 'Sub Total', 'tp-hotel-booking' ); ?>
+                                <strong><?php _e( 'Sub Total', 'tp-hotel-booking' ); ?></strong>
                                 
                             </td>
                             <td class="text-right">
@@ -68,7 +68,7 @@ global $hb_settings;
                         <?php if( $tax = hb_get_tax_settings() ) : ?>
                             <tr class="hb_advance_tax">
                                 <td colspan="7" class="text-right border-right-1">
-                                    <?php _e( 'Tax', 'tp-hotel-booking' ); ?>
+                                    <strong><?php _e( 'Tax', 'tp-hotel-booking' ); ?></strong>
                                     
                                 </td>
                                 <td class="text-right">
@@ -81,7 +81,7 @@ global $hb_settings;
                         <?php endif; ?>
                         <tr class="hb_advance_grand_total">
                             <td colspan="7" class="text-right border-right-1">
-                                <?php _e( 'Grand Total', 'tp-hotel-booking' ); ?>
+                                <strong><?php _e( 'Grand Total', 'tp-hotel-booking' ); ?></strong>
                             </td>
                             <td class="text-right">
                                 <span class=" hb_grand_total_value"><?php echo hb_format_price( $cart->total ) ?></span>
@@ -90,7 +90,7 @@ global $hb_settings;
                         <?php if( $advance_payment = $cart->advance_payment ) : ?>
                         <tr class="hb_advance_payment">
                             <td colspan="7" class="text-right border-right-1">
-                                <?php printf( __( 'Advance Payment (%s%% of Grand Total)', 'tp-hotel-booking' ), hb_get_advance_payment() ); ?>
+                                <strong><?php printf( __( 'Advance Payment (%s%% of Grand Total)', 'tp-hotel-booking' ), hb_get_advance_payment() ); ?></strong>
                             </td>
                             <td class="text-right">
                                 <span class=" hb_advance_payment_value"><?php echo hb_format_price( $advance_payment ); ?></span>

@@ -44,9 +44,12 @@
 
 				if( _val !== '' )
 				{
+					/*
 					_form.parent().siblings().find('.hb_addition_packages').removeClass('active').slideUp();
 					_toggle.removeAttr('style').addClass('active');
 					_exta_area.removeAttr('style').slideDown();
+					*/
+					_self.parents('.hb-room').find('.hb_addition_package_extra .modal').modal('show');
 				}
 				else
 				{

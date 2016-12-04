@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 column">
-					<div class="height-md-420">
+					<div class="height-md-359 spacer-bottom">
 						<div class="transparent-black pad-5-10 spacer-bottom room-head">
 							<div class="row">
 								<div class="col-md-7">
@@ -40,6 +40,10 @@
 							<?php do_action( 'hotel_booking_single_room_infomation' ); ?>
 						</div>
 					</div>
+					<div class="single-add-btn-wrapper transparent-black">
+						<?php do_action('single_add_button'); ?>
+					</div>
+					
 				</div>
 			</div>
 		</div>

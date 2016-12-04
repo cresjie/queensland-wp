@@ -74,6 +74,13 @@ h1 a:focus,h2 a:focus, h3 a:focus, h4 a:focus{
 .transparent-black .btn{
 	color: #fff;
 }
+
+.transparent-black .modal .modal-title,
+.transparent-black .modal .btn,
+.transparent-black .modal label,
+.transparent-black .modal span{
+	color: #000;
+}
 .spacer-bottom-15 {
 	margin-bottom: 15px;
 }
@@ -299,10 +306,42 @@ textarea{
 .hb-order-new-customer input[name=first_name]{
 	margin-bottom: 0;
 }
+.hb_addition_package_extra{
+	display: block;
+	padding: 0;
+}
+.hb_addition_package_extra input[type=checkbox]:checked:before{
+	content: '' !important; 
+}
 input[type=checkbox].error{
 	outline: 1px solid #f00;
 }
-
+#hotel_booking_room_hidden{
+	margin: 0 auto;
+	position: relative;
+}
+.room-head .single-search-btn{
+	display: none;
+}
+.single-add-btn-wrapper{
+	padding: 10px;
+}
+.archive-content .rooms{
+	padding: 0;
+}
+.archive-content .rooms .title{
+	padding: 5px 10px;
+    background: #fff;
+}
+.archive-content .rooms .title h4{
+	margin: 0;
+}
+.archive-content .rooms .hb_room {
+	margin-bottom: 35px;
+}
+.archive-content .rooms .hb_room .price{
+	bottom: 38px;
+}
 /*
 * Responsive
 */
@@ -310,6 +349,10 @@ input[type=checkbox].error{
 @media (min-width: 992px){
 	.height-md-420{
 		height: 420px;
+		overflow: hidden;
+	}
+	.height-md-359{
+		height: 359px;
 		overflow: hidden;
 	}
 	.room-description-wrapper{

@@ -17,15 +17,15 @@ $room_extra = $room_extra->get_extra();
 <?php if ( $room_extra ): ?>
 
 		
-
+	<div class="hb_addition_package_title">
+		<h5 class="hb_addition_package_title_toggle">
+			<a href="#optional_extra_<?=$post_id?>" class="hb_package_toggle--" data-toggle="modal">
+				<?php esc_html_e( 'Optional Extras', 'tp-hb-extra' ); ?>
+			</a>
+		</h5>
+	</div>
 	<div class="hb_addition_package_extra">
-		<div class="hb_addition_package_title">
-			<h5 class="hb_addition_package_title_toggle">
-				<a href="javascript:void(0)" class="hb_package_toggle">
-					<?php esc_html_e( 'Optional Extras', 'tp-hb-extra' ); ?>
-				</a>
-			</h5>
-		</div>
+		
 		<div class="modal fade" tabindex="-1" role="dialog" id="optional_extra_<?=$post_id?>">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -34,7 +34,7 @@ $room_extra = $room_extra->get_extra();
 						<h4 class="modal-title"><?php esc_html_e( 'Optional Extras', 'tp-hb-extra' ); ?></h4>
 					</div>
 					<div class="modal-body">
-						<div class="hb_addition_packages">
+						<div class="hb_addition_packages-">
 							<ul class="hb_addition_packages_ul">
 								<?php foreach ( $room_extra as $key => $extra ): ?>
 									<li data-price="<?php echo esc_attr( $extra->amount_singular ); ?>">

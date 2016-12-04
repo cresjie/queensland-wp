@@ -53,7 +53,7 @@ do_action( 'hotel_booking_before_checkout_form' );
 
                 <tr class="hb_sub_total">
                     <td colspan="6" class="text-right border-right-1">
-                        <?php _e( 'Sub Total', 'tp-hotel-booking' ); ?>
+                        <strong><?php _e( 'Sub Total', 'tp-hotel-booking' ); ?></strong>
                        
                     </td>
                     <td class="text-right">
@@ -66,7 +66,7 @@ do_action( 'hotel_booking_before_checkout_form' );
                 <?php if( $tax = hb_get_tax_settings() ) { ?>
                 <tr class="hb_advance_tax">
                     <td colspan="6" class="text-right border-right-1">
-                        <?php _e( 'Tax', 'tp-hotel-booking' ); ?>
+                        <strong><?php _e( 'Tax', 'tp-hotel-booking' ); ?></strong>
                        
                     </td>
                     <td class="text-right">
@@ -80,7 +80,7 @@ do_action( 'hotel_booking_before_checkout_form' );
 
                 <tr class="hb_advance_grand_total">
                     <td colspan="6" class="text-right border-right-1">
-                        <?php _e( 'Grand Total', 'tp-hotel-booking' ); ?>
+                        <strong><?php _e( 'Grand Total', 'tp-hotel-booking' ); ?></strong>
                         
                     </td>
                     <td class="text-right">
@@ -90,7 +90,7 @@ do_action( 'hotel_booking_before_checkout_form' );
                 <?php if( $advance_payment = $cart->advance_payment ) { ?>
                     <tr class="hb_advance_payment">
                         <td colspan="6" class="text-right border-right-1">
-                            <?php printf( __( 'Advance Payment (%s%% of Grand Total)', 'tp-hotel-booking' ), hb_get_advance_payment() ); ?>
+                            <strong><?php printf( __( 'Advance Payment (%s%% of Grand Total)', 'tp-hotel-booking' ), hb_get_advance_payment() ); ?></strong>
                             
                         </td>
                         <td class="text-right">
@@ -144,13 +144,6 @@ do_action( 'hotel_booking_before_checkout_form' );
         <?php endif; ?>
     </form>
 </div>
-<script>
-$(function(){
-    $('.hb-form-field input').val('a');
-    $('.hb-form-field select').each(function(i,el){
-        el.value = el.options[1].value;
-    });
-    $('.hb-form-field input[type=email]').val('cres@mailinator.com')
-});
-</script>
+
+
 <?php do_action( 'hotel_booking_after_checkout_form' ); ?>
