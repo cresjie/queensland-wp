@@ -403,3 +403,13 @@ input[type=checkbox].error{
 		border-bottom: 1px solid #eee;
 	}
 }
+
+@media(max-width: 450px) {
+	.main-navbar .navbar-brand{
+		width: 80%;
+		position: relative;
+	}
+	.main-navbar .navbar-brand img{
+		top: -20px;
+	}
+}
