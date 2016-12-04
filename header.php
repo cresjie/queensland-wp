@@ -45,7 +45,7 @@
 		              <span class="icon-bar"></span>
 		            </button>
 
-		            <a class="navbar-brand" href="#">
+		            <a class="navbar-brand" href="<?=get_site_url()?>">
 		            	<img class="img-responsive" src="<?=get_template_directory_uri()?>/images/logo.png">
 		            </a>
 				</div>

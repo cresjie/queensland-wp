@@ -50,7 +50,10 @@
                </div>
                <div id="wrap">
                   <div id="layer_logo">
-                     <img src="<?=get_template_directory_uri()?>/images/splash/logo.png" alt="" />
+                     <a href="<?=get_site_url()?>">
+                        <img src="<?=get_template_directory_uri()?>/images/splash/logo.png" alt="" />
+                     </a>
+                     
                   </div>
                   <div id="layer_model">
                      <img src="<?=get_template_directory_uri()?>/images/splash/model.png" alt="" />
