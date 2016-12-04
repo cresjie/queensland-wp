@@ -2,6 +2,11 @@
 
 <div class="container">
 	<?php while ( have_posts() ) : the_post(); ?>
+		<style>
+			body{
+				background-image: url(<?=the_post_thumbnail_url()?>);
+			}
+		</style>
 		<div id="room-<?php the_ID(); ?>" class="hotel-room">
 			<div class="page-title transparent-black spacer-bottom pad-5-10">
 				<h1 class="margin-none">Accomodation</h1>
