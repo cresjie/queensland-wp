@@ -20,7 +20,7 @@
             <head>
                <meta charset="utf-8">
                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-               <title>VICTORIA COURT Official Site – Feel the Distinction : Home</title>
+               <title>Queensland</title>
               
                <link rel="stylesheet" type="text/css" href="<?=get_template_directory_uri()?>/css/home/shadowbox.css">
                <script type="text/javascript" src="<?=get_template_directory_uri()?>/js/home/shadowbox.js"></script>
