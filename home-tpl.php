@@ -36,6 +36,12 @@
                .home-menu a{
                   color: #fff;
                }
+               #layer_logo{
+                  z-index: 99
+               }
+               #layer_logo img{
+                  width: 379px;
+               }
                </style>
             </head>
             <body id="splash2">
