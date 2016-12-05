@@ -342,6 +342,16 @@ input[type=checkbox].error{
 .archive-content .rooms .hb_room .price{
 	bottom: 38px;
 }
+.hb_addition_packages_ul{
+	padding-left: 0;
+}
+.hb_addition_packages_ul li{
+	padding: 0;
+	padding-bottom: 20px;
+}
+.hb_addition_packages_ul li:last-child{
+	padding-top: 20px;
+}
 /*
 * Responsive
 */

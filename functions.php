@@ -68,3 +68,21 @@ function get_current_template( $echo = false ) {
     else
         return $GLOBALS['current_theme_template'];
 }
+
+function ql_get_attachment_image_src( $post_id ) {
+    $args = array(
+        'posts_per_page' => 1,
+        'order'          => 'ASC',
+        'post_mime_type' => 'image',
+        'post_parent'    => $post_id,
+        'post_status'    => null,
+        'post_type'      => 'attachment',
+    );
+ 
+    $attachments = get_children( $args );
+ 	
+ 	var_dump($attachments);
+    if ( $attachments ) {
+        return  wp_get_attachment_thumb_url( $attachments[0]->ID ); //echo '<img src="' . wp_get_attachment_thumb_url( $attachments[0]->ID ) . '" class="current">';
+    }
+}
